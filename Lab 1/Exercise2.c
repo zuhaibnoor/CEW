@@ -17,7 +17,7 @@ int main() {
     perimeter = 2 * (height + width);
 
     printf("Area of the rectangle: %.2f\n", area);
-    printf("Perimeter of the rectangle: %.2f\n", perimeter);
+    printf("Perimeter of the rectangle: %.2f", perimeter);
 
     return 0;
 }
