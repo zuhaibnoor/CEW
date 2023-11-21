@@ -3,13 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define a structure for a node in the linked list
 struct Node {
     int data;
     struct Node* next;
 };
 
-// Function to create a new node
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     if (newNode == NULL) {
@@ -21,7 +19,6 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
-// Function to insert a node at the end of the linked list
 struct Node* insertAtEnd(struct Node* head, int data) {
     struct Node* newNode = createNode(data);
     if (head == NULL) {
@@ -35,10 +32,8 @@ struct Node* insertAtEnd(struct Node* head, int data) {
     return head;
 }
 
-// Function to remove elements with odd indices from the linked list
 struct Node* removeOddIndices(struct Node* head) {
     if (head == NULL || head->next == NULL) {
-        // Nothing to remove if the list is empty or has only one element
         return head;
     }
 
@@ -73,7 +68,6 @@ struct Node* removeOddIndices(struct Node* head) {
     return head;
 }
 
-// Function to print the linked list
 void printList(struct Node* head) {
     struct Node* current = head;
     while (current != NULL) {
@@ -83,7 +77,6 @@ void printList(struct Node* head) {
     printf("NULL\n");
 }
 
-// Function to free the memory used by the linked list
 void freeList(struct Node* head) {
     struct Node* current = head;
     while (current != NULL) {
@@ -96,7 +89,6 @@ void freeList(struct Node* head) {
 int main() {
     struct Node* linkedList = NULL;
 
-    // Populate the linked list
     for (int i = 1; i <= 6; i++) {
         linkedList = insertAtEnd(linkedList, i);
     }
@@ -104,13 +96,11 @@ int main() {
     printf("Original Linked List:\n");
     printList(linkedList);
 
-    // Remove elements with odd indices
     linkedList = removeOddIndices(linkedList);
 
     printf("Linked List after removing elements with odd indices:\n");
     printList(linkedList);
 
-    // Free the memory used by the linked list
     freeList(linkedList);
 
     return 0;
