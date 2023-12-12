@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1702383960 source:e:\artifical intelligence\question 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"filing.c"
+
+1702383980 e:\artifical intelligence\question 1\filing.c
+	"file.h"
+
+1702383794 e:\artifical intelligence\question 1\file.h
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1702387941 source:e:\computer engineering workshop i\lab 6\question 3\main.c
+	<stdio.h>
+	"matrix.c"
+
+1702387974 e:\computer engineering workshop i\lab 6\question 3\matrix.c
+	"matrixFn.h"
+
+1702387982 e:\computer engineering workshop i\lab 6\question 3\matrixfn.h
+
